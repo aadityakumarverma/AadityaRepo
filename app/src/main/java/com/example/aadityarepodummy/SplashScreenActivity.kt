@@ -1,8 +1,10 @@
 package com.example.aadityarepodummy
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
@@ -18,23 +20,15 @@ class SplashScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash_screen)
 
-        Button = findViewById(R.id.btnCustomToast)
-
-
-        val toast = Toast(this)
-
-        val view : View = layoutInflater.inflate(R.layout.custom_toast_layout,null)
-
-        toast.view=view
-
-        val txtView : TextView = view.findViewById(R.id.tvToastMessage)
-        txtView.text = "Message sent successfully"
-        toast.duration = Toast.LENGTH_LONG
-
-
-        Button.setOnClickListener {
-            toast.show()
-        }
+        /*btn_GetStarted.setOnClickListener {
+            val intent = Intent(this@SplashScreenActivity,UserLogin::class.java)
+            startActivity(intent)
+        }*/
+        Handler().postDelayed({
+            val intent= Intent(this@SplashScreenActivity,LoginActivity::class.java)
+            startActivity(intent)
+            finish()
+        },2000)
 
     }
 }
