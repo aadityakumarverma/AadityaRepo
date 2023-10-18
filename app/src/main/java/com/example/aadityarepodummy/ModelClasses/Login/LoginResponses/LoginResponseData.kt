@@ -1,0 +1,3 @@
+package com.example.aadityarepodummy.ModelClasses.Login.LoginResponses
+
+class LoginResponseData

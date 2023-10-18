@@ -1,2 +1,2 @@
-# AadityaRepo
-Android Kotlin-Dummy Repo contains basic settings
+# Appsinvo_TreatUs
+In this project I have implemented Login api and otp verification api

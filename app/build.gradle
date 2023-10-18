@@ -47,8 +47,12 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //my Dependencies
+        // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+    implementation("com.squareup.okhttp3:logging-interceptor:4.11.0")
 
-    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
     implementation 'com.hbb20:ccp:2.5.0'
     implementation 'de.hdodenhof:circleimageview:3.1.0'
 }

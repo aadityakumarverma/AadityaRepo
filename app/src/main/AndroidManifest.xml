@@ -3,24 +3,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.aadityarepodummy">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@drawable/img_app_icon"
+        android:icon="@drawable/vector_add_circle_large"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AadityaRepoDummy"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
+            android:name=".UI.Activities.SetProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".CustomToastActivity"
+            android:name=".UI.Activities.HomeActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".UI.Activities.OtpVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Activities.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.Activities.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
