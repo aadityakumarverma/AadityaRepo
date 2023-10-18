@@ -8,11 +8,16 @@
     android:background="#FFFFFF"
     tools:context=".SplashScreenActivity">
 
-    <ImageView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/img_splash"
-        android:padding="@dimen/_20sdp"
+        android:padding="20dp"
+        android:text="TreatUs"
+        android:textSize="50dp"
+        android:textColor="@color/light_green"
+        android:drawableStart="@drawable/vector_add_circle_large"
+        android:drawablePadding="5dp"
+        android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
